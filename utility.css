@@ -1,0 +1,19 @@
+.faqbox{
+    height: 64px;
+    width: 60px;
+   
+    border-radius: 10px;
+    background-image: url('images/WhatsApp.svg.webp');
+    background-size: contain;
+    position: fixed;
+    right : 40px;
+    bottom: 40px;
+    z-index: 10;
+
+}
+.searchh input{
+    width: 240px;
+    height:37px ;
+    border-radius: 10px;
+    d
+}
