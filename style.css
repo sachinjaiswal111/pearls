@@ -13,6 +13,7 @@
     padding-left: 40px;
 
 }
+
 .features ul{
     list-style:none ;
     display: flex;
@@ -122,4 +123,29 @@ footer {
 .footer-bottom img {
     width: 50px;
     margin: 5px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none; 
+    background-color: none;
+}
+
+.faqbox{
+    height: 64px;
+    width: 60px;
+   
+    border-radius: 10px;
+    background-image: url('images/WhatsApp.svg.webp');
+    background-size: contain;
+    position: fixed;
+    right : 40px;
+    bottom: 40px;
+    z-index: 10;
+
+}
+.searchh input{
+    width: 240px;
+    height:37px ;
+    border-radius: 10px;
 }
