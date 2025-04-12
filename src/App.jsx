@@ -1,8 +1,15 @@
 import React from 'react'
+import Footer from './Components/Footer'
+import Header from './Components/Header'
+import { Outlet } from 'react-router'
 
 const App = () => {
   return (
-    <div className='text-3xl'>App</div>
+    <>
+        <Header />
+        <Outlet />
+        <Footer />
+    </>
   )
 }
 
