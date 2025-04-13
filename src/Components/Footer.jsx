@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 const Footer = () => {
   return (
-    <div className="h-44 w-[100%] px-14 font-[Poppins] bg-[#24262b] absolute bottom-0">
+    <div className="h-44 w-[100%] px-14 font-[Poppins] bg-[#24262b] bottom-0">
         <div className="flex text-gray-500 justify-between">
             
             <div className="leading-7 text-lg">
