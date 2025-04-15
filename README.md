@@ -1,6 +1,6 @@
-#Pearls
+# Pearls
 
-Pearls is an B2C e-commerce store designed by Sachin [https://github.com/sachinjaiswal111] and Srijan [https://github.com/thesrijankumat] together as an web app as per the request of client
+Pearls is an B2C e-commerce store designed by [Sachin](https://github.com/sachinjaiswal111) and [Srijan](https://github.com/thesrijankumar) together as an web app as per the request of client
 
 
 # React + Vite
