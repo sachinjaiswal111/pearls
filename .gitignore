@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 old-code
-images
 
 # Editor directories and files
 .vscode/*

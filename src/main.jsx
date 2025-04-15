@@ -4,6 +4,7 @@ import './styles.css'
 import App from './App.jsx'
 import Home from "./Components/Home.jsx"
 import Products from "./Components/Products.jsx"
+import Cart from './Components/Cart.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
                 path: "products",
                 element: <Products />
             },
+            {
+                path: "cart",
+                element: <Cart />
+            }
         ]
     }
 ])
