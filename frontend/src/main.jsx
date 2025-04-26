@@ -4,8 +4,9 @@ import './styles.css'
 import App from './App.jsx'
 import Home from "./Components/Home.jsx"
 import Products from "./Components/Products.jsx"
-import Cart from './Components/Cart.jsx'
+import Cart from './Components/Cart/Cart.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
+import Login from './Components/Login.jsx'
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: "cart",
                 element: <Cart />
+            },
+            {
+                path: "login",
+                element: <Login />
             }
         ]
     }
