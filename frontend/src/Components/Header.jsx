@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router'
+import { useCart } from './Cart/CartContext';
 
 const Header = () => {
+    
+    const { totalItems } = useCart();
+
   return (
     <>
     <div className="flex top-0 px-12 py-6 justify-between bg-[#cde8e5]">
@@ -28,7 +32,7 @@ const Header = () => {
                 </li>
                 </Link>
 
-                <Link to="/">
+                <Link to="/login">
                 <li id='Profile'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                         <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" />
@@ -46,7 +50,7 @@ const Header = () => {
                 </Link>
 
                 <Link to="/cart">
-                <li id='Cart'>
+                <li id='Cart' className='relative'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                         <path d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                         <path d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
@@ -54,6 +58,13 @@ const Header = () => {
                         <circle cx="10.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
                         <circle cx="17.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
                     </svg>
+
+                    {totalItems > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                            {totalItems}
+                        </span>
+                    )}
+
                 </li>
                 </Link>
             </ul>
